@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Triangle Cursor",
+  "description": "Browse the internet with triangle cursor",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": ["triangle.css"]
+    }
+  ],
+  "permissions": [
+    "tabs", "*://*/*"
+  ],
+  "browser_action": {
+    "default_icon": "triangle.png"
+  },
+  "web_accessible_resources": ["triangle.png"]
+}
